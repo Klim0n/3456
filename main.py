@@ -1,14 +1,17 @@
 from math import *
-a=int(input("ievadirtskaitli a: "))
-b=int(input("ievadirtskaitli b: "))
-c=int(input("ievadirtskaitli c: "))
-D=b**2-4*a*c
-if D<0:
-  print("skaņu nav!")
-elif D==0:
-  x=-b/2*a
-  print("ir viena sakne =",x)
+sk1=int(input("ievadirtskaitli a: "))
+sk2=int(input("ievadirtskaitli b: "))
+oper=input("ievadiet matematsikp operaciku: ")
+if oper=="+":
+  print("summa =", sk1+sk2)
+elif oper== "-":
+  print("reizinajums =", sk1-sk2)
+elif oper== "*":
+  print("reizinajums =", sk1*sk2)
+elif oper=="/":
+  print("reizinajums =", sk1/sk2)
+elif oper=="s":
+  print("kvadratasakne =", sqrt(sk1))
 else:
-  x1=(-b+sqrt(D))/2*a 
-  x2=(-b+sqrt(D))/2*a
-  print("ir divas saknes, x1 =",x1," x2 =",x2)
+  print("šāda matematiska operacija netiek atvalstita!!!")
+  
